@@ -93,6 +93,11 @@ p{
   display: flex;
   margin-top: 3rem;
 }
+.hero-btn>img{
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: auto;
+}
 
 .hero-text{
   margin-top: 7.5rem;
@@ -113,7 +118,15 @@ p{
 }
 
 .item{
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+.line{
+  width: 0.75rem;
+  height: 2px;
+  background-color: #fadf63;
+  position: relative;
+  top: -0.625rem;
 }
 
 .logo{
@@ -146,7 +159,7 @@ p{
   width: 20rem;
   background-color: rgba(0, 0, 0, 1);
   top: 5.5rem;
-  height: 100vh;
+  height: 37.7rem;
   z-index: 3;
   display: flex;
   flex-direction: column;
