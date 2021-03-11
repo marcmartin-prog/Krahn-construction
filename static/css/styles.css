@@ -60,6 +60,13 @@ p{
     opacity: 0.5;
 }
 
+#btn-main{
+  color: white;
+  border: 1px white solid;
+  padding: 1rem 1.5rem;
+  margin: 5rem 0;
+}
+
 #hamburger{
   margin: 1.69rem .94rem 0;
   z-index: 2;
@@ -72,6 +79,7 @@ p{
 
 .about{
   background-color: #26547c;
+  margin-top: 6rem;
 }
 
 .border{
@@ -91,6 +99,15 @@ p{
   top: -3.45rem;
   left: 0;
   z-index: 0;
+}
+.blue-border{
+  height: 25rem;
+  width: 100vw;
+  background-image: linear-gradient(rgba(38, 84, 124, 0), rgba(38, 84, 124, 1));
+  position: absolute;
+  left: 0;
+  top: -24.9rem;
+  z-index: -1;
 }
 
 .hero{
@@ -128,6 +145,17 @@ p{
   z-index: -1;
 }
 
+.intro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.intro-item>p{
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 1;
+}
+
 .item img{
   width: 100%;
 }
@@ -147,6 +175,10 @@ p{
 .logo{
   margin: 1.5rem 0.94rem 0;
   z-index: 2;
+}
+.logo-about img{
+  width: 9.2rem;
+  margin: 2.5rem 0 2rem;
 }
 
 .logo>img{
@@ -206,6 +238,8 @@ p{
 
 .projects{
  top: -3rem;
+ max-height: 77.625rem;
+
 }
 
 .solutions{
