@@ -15,6 +15,16 @@ function mobileMenu(){
   }else if(menu.classList.contains('menu-closed')){
     menu.classList.remove('menu-closed');
     menu.classList.add('menu-open');
-    menuButton.setAttribute('src', '/images/Vector.png')
+    menuButton.setAttribute('src', '/images/Vector.png');
   }
 }
+
+
+//show more script
+
+const moreButton = document.querySelector('#btn-main');
+const moreProjects = document.querySelector('.project:nth-child(n+4)');
+
+moreButton.addEventListener('click', function(){
+  moreProjects.style.display="block";
+});

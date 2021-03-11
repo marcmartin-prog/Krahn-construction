@@ -23,6 +23,7 @@
 	<main role="main">
 		{{ block "main" . }}{{ end }}
 		{{ block "projects" . }}
+		  <div class="project-parent">
 		   {{ $dataJ := getJSON "https://76la3n1i.api.sanity.io/v1/data/query/production?query=*%5B_type%20%3D%3D%20'project'%5D%7Bname%2Cdescription%2Cimage%2C'imageUrl'%3A%20image.asset-%3Eurl%7D" }}
 		   {{ range $dataJ.result}}
 			   <div class="project">
@@ -37,6 +38,7 @@
 					 {{ end }}
 			   </div>
 			 {{ end }}
+			   </div>
 		{{ end }}
 		{{ partial "about.html"}}
 	</main>

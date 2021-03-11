@@ -236,10 +236,17 @@ p{
   color: #363020;
 }
 
+
 .projects{
  top: -3rem;
- max-height: 77.625rem;
 
+}
+.project-parent{
+   overflow-y: hidden;
+}
+
+.project:nth-child(n+4){
+  display: none;
 }
 
 .solutions{
