@@ -22,9 +22,15 @@
 	{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
 	<main role="main">
 		{{ block "main" . }}{{ end }}
+		{{ block "projects" . }}
+		   {{ $dataJ := getJSON "https://76la3n1i.api.sanity.io/v1/data/query/production?query=*[]{name,description,image}" }}
+		   {{ range $dataJ}}
+			   {{partial "project.html" }}
+			 {{ end }}
+		{{ end }}
+		{{ partial "about.html"}}
 	</main>
 	{{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
-	{{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
 </body>
 
 </html>

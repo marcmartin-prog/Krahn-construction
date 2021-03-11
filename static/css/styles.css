@@ -24,6 +24,8 @@ h2{
   color: white;
   font-weight: 500;
   letter-spacing: 2.4px;
+  z-index: 2;
+  position: relative;
 }
 
 h3{
@@ -34,7 +36,7 @@ h3{
   letter-spacing: 0;
 }
 
-section{
+section, .project, .projects{
   padding: 0.94rem;
   position: relative;
 }
@@ -68,6 +70,10 @@ p{
   width: 2rem;
 }
 
+.about{
+  background-color: #26547c;
+}
+
 .border{
   height: 8rem;
   width: 100vw;
@@ -76,6 +82,15 @@ p{
   left: 0;
   top: -7.8rem;
   z-index: 5;
+}
+.border-bottom{
+  height: 25rem;
+  width: 100vw;
+  background-image: linear-gradient(rgba(31, 30, 26, 1), rgba(31, 30, 26, 0));
+  position: absolute;
+  top: -6.45rem;
+  left: 0;
+  z-index: 0;
 }
 
 .hero{
@@ -138,6 +153,13 @@ p{
   width: 9.2rem;
 }
 
+.logo-bg{
+  position: absolute;
+  z-index: 3;
+  right: 2rem;
+  top: -3rem;
+}
+
 .main-menu{
   display: none;
 
@@ -173,6 +195,17 @@ p{
 
 .menu-open{
   right: 0;
+}
+
+.project-img{
+  width: 100%
+}
+.project-heading, .project-text{
+  color: #363020;
+}
+
+.projects{
+ top: -3rem;
 }
 
 .solutions{

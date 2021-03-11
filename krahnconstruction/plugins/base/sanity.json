@@ -1,0 +1,15 @@
+{
+  "paths": {
+    "source": "./src",
+    "compiled": "./lib"
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/",
+      "description": "base"
+    },
+    {
+      "implements": "part:@sanity/base",
+    }
+  ]
+}
