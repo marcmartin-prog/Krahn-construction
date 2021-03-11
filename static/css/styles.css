@@ -88,7 +88,7 @@ p{
   width: 100vw;
   background-image: linear-gradient(rgba(31, 30, 26, 1), rgba(31, 30, 26, 0));
   position: absolute;
-  top: -6.45rem;
+  top: -3.45rem;
   left: 0;
   z-index: 0;
 }
@@ -157,7 +157,7 @@ p{
   position: absolute;
   z-index: 3;
   right: 2rem;
-  top: -3rem;
+  top: -0.5rem;
 }
 
 .main-menu{
