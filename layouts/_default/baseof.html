@@ -18,7 +18,7 @@
 	{{ template "_internal/google_analytics_async.html" . }}
 </head>
 
-<body>
+<body onload="styleLoad()">
 	{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
 	<main role="main">
 		{{ block "main" . }}{{ end }}
@@ -41,6 +41,7 @@
 			   </div>
 		{{ end }}
 		{{ partial "about.html"}}
+		{{ partial "contact.html"}}
 	</main>
 	{{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
 </body>
