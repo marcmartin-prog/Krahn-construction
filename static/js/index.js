@@ -26,5 +26,13 @@ const moreButton = document.querySelector('#btn-main');
 const moreProjects = document.querySelector('.project:nth-child(n+4)');
 
 moreButton.addEventListener('click', function(){
+  if(moreProjects.style.display === "none"){
   moreProjects.style.display="block";
+  moreButton.innerHTML = "SHOW LESS";
+  document.querySelector('.arrow').style.transform = "rotate(180deg)";
+} else if (moreProjects.style.display === 'block') {
+  moreProjects.style.display='none';
+  moreButton.innerHTML = "SHOW MORE";
+  document.querySelector('#btn-main>img').style.transform = "rotate(180)";
+}
 });
