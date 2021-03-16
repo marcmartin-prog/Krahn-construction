@@ -1,8 +1,31 @@
 <footer role="contentinfo">
-	<div>
+ <div class="footer-parent">
+   <div class="">
+		 <picture class="logo-about">
+       <source srcset="/images/Logo1.webp" type="image/webp">
+       <source srcset="/images/Logo1.png" type="image/png">
+       <img src="/images/Logo1.png" alt="Krahn Construction Logo">
+     </picture>
+		 <p>Your best Choice in a Construction and Excavation Partner</p>
+   </div>
+	 <div class="">
+	 	<h4>ADDRESS</h4>
+		<p>Main Office</p>
+		<a href="#">492 Essex Rd 37 <br>Leamington, ON Canada N8H-3V6</a> <br>
+		<a href="#" class="footer-link">SHOW ON MAP</a>
+	 </div>
+	 <div class="">
+	 	<h4>CONTACT US</h4>
+		<a href="tel:5198180631">519-818-0631</a>
+		<a href="mailto:krahnconstruction@gmail.com">krahnconstruction@gmail.com</a>
+	 </div>
+ </div>
+
+	<div class="details">
 		<a href="{{ .Site.BaseURL }}">
-			&copy; {{ now.Format "2006" }} {{ .Site.Title }}
-		</a>
+			&copy; {{ now.Format "2006" }} {{ .Site.Title }} All Rights Reserved
+		</a> <br>
+		<a href="https://www.scriptworks.net">Website by ScriptWorks Web Dev</a>
 		<div>{{ partial "social-follow.html" . }}</div>
 	</div>
 </footer>
