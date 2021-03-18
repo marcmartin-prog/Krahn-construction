@@ -1,10 +1,30 @@
 {{ define "header" }}
 {{/* We can override any block in the baseof file be defining it in the template */}}
-{{ partial "page-header.html" . }}
+{{ partial "site-header.html" . }}
 {{ end }}
 
 {{ define "main" }}
-   {{ .Content . }}
-    <p>this is index</p>
+   {{ .Content }}
 
+
+{{ end }}
+{{ define "projects"}}
+  <div class="project-parent">
+ {{ $dataJ := getJSON "https://76la3n1i.api.sanity.io/v1/data/query/production?query=*%5B_type%20%3D%3D%20'project'%5D%7Bname%2Cdescription%2Cimage%2C'imageUrl'%3A%20image.asset-%3Eurl%7D" }}
+ {{ range $dataJ.result}}
+   <div class="project">
+     {{ with .imageUrl }}
+       <img src="{{ . }}" alt="" class="project-img">
+     {{ end}}
+     {{ with .name }}
+       <h3 class="project-heading"> {{ . }}</h3>
+     {{ end }}
+     {{ with .description }}
+       <p class="project-text">{{ . }}</p>
+     {{ end }}
+   </div>
+ {{ end }}
+   </div>
+   {{ partial "about.html"}}
+   {{ partial "contact.html"}}
 {{ end }}
