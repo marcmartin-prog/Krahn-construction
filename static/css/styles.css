@@ -602,7 +602,7 @@ header{
   }
 
   .hero-video{
-    height: 100rem;
+    height: 70rem;
   }
 
   .line{
@@ -615,12 +615,12 @@ header{
   }
 
   .hero{
-    height: 75rem;
+    height: 65rem;
   }
 
   .hero-text{
     max-width: 100rem;
-    margin-top: 25.5rem;
+    margin-top: 15.5rem;
   }
 
   .item-parent, .project-parent, .about-item{
