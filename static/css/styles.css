@@ -134,7 +134,7 @@ textarea:focus, textarea:focus, select:focus{
   color: white;
   border: 1px white solid;
   padding: 1rem 1.5rem;
-  margin: 5rem 0.94rem;
+
 }
 
 #hamburger{
@@ -374,6 +374,13 @@ footer a{
   right: 0;
 }
 
+.project-button{
+  max-width: 50rem;
+  margin: auto;
+  padding-left: 0.94rem;
+  margin-top: 2rem;
+}
+
 .project-img{
   width: 100%
 }
@@ -597,7 +604,7 @@ header{
 
   #btn-main{
     position: relative;
-    left: 25.5rem;
+    left: 13rem;
     top: -2rem;
   }
 
