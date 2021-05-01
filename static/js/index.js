@@ -44,7 +44,7 @@ moreButton.addEventListener('click', function(){
 });
 
 //autoplay video
-const bgVideo = document.querySelector('.hero-video');
+const bgVideo = document.getElementById('h-video');
 
 bgVideo.muted = true;
 bgVideo.play();

@@ -1,3 +1,18 @@
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-play-button{
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button{
+  display: none!important;
+  -webkit-appearance: none
+}
+
 a{
     font-family: 'JetBrains Mono', monospace;
     text-decoration: none;
@@ -10,6 +25,7 @@ a:hover{
 body{
   margin: 0;
   overflow-x: hidden;
+  position: relative;
 }
 
 footer h4, footer p{
@@ -62,6 +78,8 @@ h4{
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
 }
 
 input {
