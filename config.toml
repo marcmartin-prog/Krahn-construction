@@ -1,3 +1,4 @@
 baseURL = "http://krahnconstruction.ca/"
 languageCode = "en-us"
 title = "Krahn Construction"
+enableRobotsTXT = true
